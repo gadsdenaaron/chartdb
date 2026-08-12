@@ -41,6 +41,7 @@ export const Menu: React.FC<MenuProps> = () => {
     const {
         openCreateDiagramDialog,
         openOpenDiagramDialog,
+        openDatabaseCatalogDialog,
         openExportSQLDialog,
         openImportDatabaseDialog,
         openExportImageDialog,
@@ -78,6 +79,10 @@ export const Menu: React.FC<MenuProps> = () => {
 
     const openDiagram = () => {
         openOpenDiagramDialog();
+    };
+
+    const browseDataModels = () => {
+        openDatabaseCatalogDialog();
     };
 
     const exportSVG = useCallback(() => {
@@ -164,6 +169,9 @@ export const Menu: React.FC<MenuProps> = () => {
                                 ].keyCombinationLabel
                             }
                         </MenubarShortcut>
+                    </MenubarItem>
+                    <MenubarItem onClick={browseDataModels}>
+                        {t('menu.actions.browse_models')}
                     </MenubarItem>
                     <MenubarItem onClick={updateDiagramUpdatedAt}>
                         {t('menu.actions.save')}

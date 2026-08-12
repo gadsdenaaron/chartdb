@@ -5,6 +5,7 @@ export const en = {
         editor_sidebar: {
             new_diagram: 'New',
             browse: 'Open',
+            browse_models: 'Models',
             tables: 'Tables',
             refs: 'Refs',
             dependencies: 'Dependencies',
@@ -16,6 +17,7 @@ export const en = {
                 actions: 'Actions',
                 new: 'New...',
                 browse: 'All Databases...',
+                browse_models: 'Browse Data Models...',
                 save: 'Save',
                 import: 'Import',
                 export_sql: 'Export SQL',
@@ -357,6 +359,7 @@ export const en = {
             cancel: 'Cancel',
             open: 'Open',
             new_database: 'New Database',
+            browse_models: 'Browse Data Models',
 
             diagram_actions: {
                 open: 'Open',
