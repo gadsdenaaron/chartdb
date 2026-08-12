@@ -1,0 +1,187 @@
+{
+  "id": "0",
+  "name": "Diagram 1",
+  "createdAt": "2026-08-12T06:02:24.736Z",
+  "updatedAt": "2026-08-12T06:02:24.736Z",
+  "databaseType": "sql_server",
+  "tables": [
+    {
+      "id": "1",
+      "name": "users",
+      "schema": "dbo",
+      "order": 0,
+      "fields": [
+        {
+          "id": "2",
+          "name": "id",
+          "type": {
+            "name": "int",
+            "id": "int",
+            "usageLevel": 1
+          },
+          "nullable": false,
+          "primaryKey": true,
+          "unique": true,
+          "createdAt": 1786514544735
+        },
+        {
+          "id": "3",
+          "name": "username",
+          "type": {
+            "name": "varchar",
+            "id": "varchar",
+            "fieldAttributes": {
+              "hasCharMaxLength": true,
+              "hasCharMaxLengthOption": true,
+              "maxLength": 8000
+            },
+            "usageLevel": 1
+          },
+          "nullable": true,
+          "primaryKey": false,
+          "unique": false,
+          "createdAt": 1786514544735
+        },
+        {
+          "id": "4",
+          "name": "email",
+          "type": {
+            "name": "varchar",
+            "id": "varchar",
+            "fieldAttributes": {
+              "hasCharMaxLength": true,
+              "hasCharMaxLengthOption": true,
+              "maxLength": 8000
+            },
+            "usageLevel": 1
+          },
+          "nullable": true,
+          "primaryKey": false,
+          "unique": false,
+          "createdAt": 1786514544735
+        }
+      ],
+      "indexes": [
+        {
+          "id": "5",
+          "name": "",
+          "fieldIds": [
+            "2"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1786514544735
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "color": "#8eb7ff",
+      "isView": false,
+      "createdAt": 1786514544735,
+      "diagramId": "l1bmnz0iw4mh"
+    },
+    {
+      "id": "6",
+      "name": "posts",
+      "schema": "dbo",
+      "order": 1,
+      "fields": [
+        {
+          "id": "7",
+          "name": "id",
+          "type": {
+            "name": "int",
+            "id": "int",
+            "usageLevel": 1
+          },
+          "nullable": false,
+          "primaryKey": true,
+          "unique": true,
+          "createdAt": 1786514544736
+        },
+        {
+          "id": "8",
+          "name": "user_id",
+          "type": {
+            "name": "int",
+            "id": "int",
+            "usageLevel": 1
+          },
+          "nullable": true,
+          "primaryKey": false,
+          "unique": false,
+          "createdAt": 1786514544736
+        },
+        {
+          "id": "9",
+          "name": "title",
+          "type": {
+            "name": "varchar",
+            "id": "varchar",
+            "fieldAttributes": {
+              "hasCharMaxLength": true,
+              "hasCharMaxLengthOption": true,
+              "maxLength": 8000
+            },
+            "usageLevel": 1
+          },
+          "nullable": true,
+          "primaryKey": false,
+          "unique": false,
+          "createdAt": 1786514544736
+        },
+        {
+          "id": "10",
+          "name": "content",
+          "type": {
+            "name": "text",
+            "id": "text",
+            "usageLevel": 1
+          },
+          "nullable": true,
+          "primaryKey": false,
+          "unique": false,
+          "createdAt": 1786514544736
+        }
+      ],
+      "indexes": [
+        {
+          "id": "11",
+          "name": "",
+          "fieldIds": [
+            "7"
+          ],
+          "unique": true,
+          "isPrimaryKey": true,
+          "createdAt": 1786514544736
+        }
+      ],
+      "x": 300,
+      "y": 0,
+      "color": "#8eb7ff",
+      "isView": false,
+      "createdAt": 1786514544736,
+      "diagramId": "l1bmnz0iw4mh"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "12",
+      "name": "users_id_posts_user_id",
+      "sourceSchema": "dbo",
+      "targetSchema": "dbo",
+      "sourceTableId": "1",
+      "targetTableId": "6",
+      "sourceFieldId": "2",
+      "targetFieldId": "8",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1786514544736,
+      "diagramId": "l1bmnz0iw4mh"
+    }
+  ],
+  "dependencies": [],
+  "areas": [],
+  "customTypes": [],
+  "notes": []
+}
