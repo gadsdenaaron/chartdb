@@ -5,6 +5,7 @@ export const ja: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: '新規',
             browse: '開く',
+            browse_models: 'モデル',
             tables: 'テーブル',
             refs: '参照',
             dependencies: '依存関係',
@@ -16,6 +17,7 @@ export const ja: LanguageTranslation = {
                 actions: 'アクション',
                 new: '新規...',
                 browse: 'すべてのデータベース...',
+                browse_models: 'データモデルを閲覧...',
                 save: '保存',
                 import: 'データベースをインポート',
                 export_sql: 'SQLをエクスポート',
@@ -369,6 +371,7 @@ export const ja: LanguageTranslation = {
             cancel: 'キャンセル',
             open: '開く',
             new_database: '新しいデータベース',
+            browse_models: 'データモデルを閲覧',
 
             diagram_actions: {
                 open: '開く',

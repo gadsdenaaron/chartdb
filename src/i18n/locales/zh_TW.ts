@@ -5,6 +5,7 @@ export const zh_TW: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: '新建',
             browse: '開啟',
+            browse_models: '模型',
             tables: '表格',
             refs: 'Refs',
             dependencies: '相依性',
@@ -16,6 +17,7 @@ export const zh_TW: LanguageTranslation = {
                 actions: '操作',
                 new: '新增...',
                 browse: '所有資料庫...',
+                browse_models: '瀏覽資料模型...',
                 save: '儲存',
                 import: '匯入資料庫',
                 export_sql: '匯出 SQL',
@@ -358,6 +360,7 @@ export const zh_TW: LanguageTranslation = {
             cancel: '取消',
             open: '開啟',
             new_database: '新建資料庫',
+            browse_models: '瀏覽資料模型',
 
             diagram_actions: {
                 open: '開啟',

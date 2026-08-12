@@ -5,6 +5,7 @@ export const bn: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'নতুন',
             browse: 'খুলুন',
+            browse_models: 'মডেল',
             tables: 'টেবিল',
             refs: 'রেফস',
             dependencies: 'নির্ভরতা',
@@ -16,6 +17,7 @@ export const bn: LanguageTranslation = {
                 actions: 'কার্য',
                 new: 'নতুন...',
                 browse: 'সমস্ত ডেটাবেস...',
+                browse_models: 'ডেটা মডেল ব্রাউজ করুন...',
                 save: 'সংরক্ষণ করুন',
                 import: 'ডাটাবেস আমদানি করুন',
                 export_sql: 'SQL রপ্তানি করুন',
@@ -368,6 +370,7 @@ export const bn: LanguageTranslation = {
             cancel: 'বাতিল করুন',
             open: 'খুলুন',
             new_database: 'নতুন ডেটাবেস',
+            browse_models: 'ডেটা মডেল ব্রাউজ করুন',
 
             diagram_actions: {
                 open: 'খুলুন',

@@ -5,6 +5,7 @@ export const id_ID: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Baru',
             browse: 'Buka',
+            browse_models: 'Model',
             tables: 'Tabel',
             refs: 'Refs',
             dependencies: 'Ketergantungan',
@@ -16,6 +17,7 @@ export const id_ID: LanguageTranslation = {
                 actions: 'Aksi',
                 new: 'Baru...',
                 browse: 'Semua database...',
+                browse_models: 'Jelajahi Model Data...',
                 save: 'Simpan',
                 import: 'Impor Database',
                 export_sql: 'Ekspor SQL',
@@ -365,6 +367,7 @@ export const id_ID: LanguageTranslation = {
             cancel: 'Batal',
             open: 'Buka',
             new_database: 'Database Baru',
+            browse_models: 'Jelajahi Model Data',
 
             diagram_actions: {
                 open: 'Buka',

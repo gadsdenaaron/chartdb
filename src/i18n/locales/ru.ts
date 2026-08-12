@@ -5,6 +5,7 @@ export const ru: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Новая',
             browse: 'Открыть',
+            browse_models: 'Модели',
             tables: 'Таблицы',
             refs: 'Ссылки',
             dependencies: 'Зависимости',
@@ -16,6 +17,7 @@ export const ru: LanguageTranslation = {
                 actions: 'Действия',
                 new: 'Новая...',
                 browse: 'Все базы данных...',
+                browse_models: 'Обзор моделей данных...',
                 save: 'Сохранить',
                 import: 'Импортировать базу данных',
                 export_sql: 'Экспорт SQL',
@@ -365,6 +367,7 @@ export const ru: LanguageTranslation = {
             cancel: 'Отмена',
             open: 'Открыть',
             new_database: 'Новая база данных',
+            browse_models: 'Обзор моделей данных',
 
             diagram_actions: {
                 open: 'Открыть',

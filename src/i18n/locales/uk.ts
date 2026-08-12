@@ -5,6 +5,7 @@ export const uk: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Нова',
             browse: 'Відкрити',
+            browse_models: 'Моделі',
             tables: 'Таблиці',
             refs: 'Зв’язки',
             dependencies: 'Залежності',
@@ -16,6 +17,7 @@ export const uk: LanguageTranslation = {
                 actions: 'Дії',
                 new: 'Нова...',
                 browse: 'Усі бази даних...',
+                browse_models: 'Переглянути моделі даних...',
                 save: 'Зберегти',
                 import: 'Імпорт бази даних',
                 export_sql: 'Експорт SQL',
@@ -366,6 +368,7 @@ export const uk: LanguageTranslation = {
             cancel: 'Скасувати',
             open: 'Відкрити',
             new_database: 'Нова база даних',
+            browse_models: 'Переглянути моделі даних',
 
             diagram_actions: {
                 open: 'Відкрити',
