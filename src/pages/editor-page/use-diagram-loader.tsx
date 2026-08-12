@@ -15,7 +15,7 @@ export const useDiagramLoader = () => {
     const { loadDiagram, currentDiagram } = useChartDB();
     const { resetRedoStack, resetUndoStack } = useRedoUndoStack();
     const { showLoader, hideLoader } = useFullScreenLoader();
-    const { openCreateDiagramDialog, openOpenDiagramDialog } = useDialog();
+    const { openDatabaseCatalogDialog, openOpenDiagramDialog } = useDialog();
     const navigate = useNavigate();
     const { listDiagrams } = useStorage();
 
@@ -60,7 +60,7 @@ export const useDiagramLoader = () => {
             if (diagrams.length > 0) {
                 openOpenDiagramDialog({ canClose: false });
             } else {
-                openCreateDiagramDialog();
+                openDatabaseCatalogDialog({ canClose: false });
             }
         };
 
@@ -75,7 +75,7 @@ export const useDiagramLoader = () => {
         loadDefaultDiagram();
     }, [
         diagramId,
-        openCreateDiagramDialog,
+        openDatabaseCatalogDialog,
         config,
         navigate,
         listDiagrams,

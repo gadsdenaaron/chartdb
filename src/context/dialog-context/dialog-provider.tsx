@@ -5,6 +5,8 @@ import type { CreateDiagramDialogProps } from '@/dialogs/create-diagram-dialog/c
 import { CreateDiagramDialog } from '@/dialogs/create-diagram-dialog/create-diagram-dialog';
 import type { OpenDiagramDialogProps } from '@/dialogs/open-diagram-dialog/open-diagram-dialog';
 import { OpenDiagramDialog } from '@/dialogs/open-diagram-dialog/open-diagram-dialog';
+import type { DatabaseCatalogDialogProps } from '@/dialogs/database-catalog-dialog/database-catalog-dialog';
+import { DatabaseCatalogDialog } from '@/dialogs/database-catalog-dialog/database-catalog-dialog';
 import type { ExportSQLDialogProps } from '@/dialogs/export-sql-dialog/export-sql-dialog';
 import { ExportSQLDialog } from '@/dialogs/export-sql-dialog/export-sql-dialog';
 import { DatabaseType } from '@/lib/domain/database-type';
@@ -47,6 +49,20 @@ export const DialogProvider: React.FC<React.PropsWithChildren> = ({
                 setOpenOpenDiagramDialog(true);
             },
             [setOpenOpenDiagramDialog]
+        );
+
+    const [openDatabaseCatalogDialog, setOpenDatabaseCatalogDialog] =
+        useState(false);
+    const [databaseCatalogDialogParams, setDatabaseCatalogDialogParams] =
+        useState<Omit<DatabaseCatalogDialogProps, 'dialog'>>();
+
+    const openDatabaseCatalogDialogHandler: DialogContext['openDatabaseCatalogDialog'] =
+        useCallback(
+            (props) => {
+                setDatabaseCatalogDialogParams(props);
+                setOpenDatabaseCatalogDialog(true);
+            },
+            [setOpenDatabaseCatalogDialog]
         );
 
     const [openCreateRelationshipDialog, setOpenCreateRelationshipDialog] =
@@ -141,6 +157,9 @@ export const DialogProvider: React.FC<React.PropsWithChildren> = ({
                 closeCreateDiagramDialog: () => setOpenNewDiagramDialog(false),
                 openOpenDiagramDialog: openOpenDiagramDialogHandler,
                 closeOpenDiagramDialog: () => setOpenOpenDiagramDialog(false),
+                openDatabaseCatalogDialog: openDatabaseCatalogDialogHandler,
+                closeDatabaseCatalogDialog: () =>
+                    setOpenDatabaseCatalogDialog(false),
                 openExportSQLDialog: openExportSQLDialogHandler,
                 closeExportSQLDialog: () => setOpenExportSQLDialog(false),
                 openCreateRelationshipDialog:
@@ -173,6 +192,10 @@ export const DialogProvider: React.FC<React.PropsWithChildren> = ({
             <OpenDiagramDialog
                 dialog={{ open: openOpenDiagramDialog }}
                 {...openDiagramDialogParams}
+            />
+            <DatabaseCatalogDialog
+                dialog={{ open: openDatabaseCatalogDialog }}
+                {...databaseCatalogDialogParams}
             />
             <ExportSQLDialog
                 dialog={{ open: openExportSQLDialog }}

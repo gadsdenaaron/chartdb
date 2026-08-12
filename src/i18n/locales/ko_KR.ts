@@ -373,6 +373,20 @@ export const ko_KR: LanguageTranslation = {
             },
         },
 
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
+        },
+
         export_sql_dialog: {
             title: 'SQL로 내보내기',
             description: '다이어그램 스키마를 {{databaseType}} SQL로 내보내기',

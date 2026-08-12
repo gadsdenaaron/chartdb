@@ -367,6 +367,20 @@ export const zh_CN: LanguageTranslation = {
             },
         },
 
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
+        },
+
         export_sql_dialog: {
             title: '导出 SQL 语句',
             description: '将您的图表模式导出为 {{databaseType}} 脚本。',
