@@ -31,36 +31,38 @@ export const useDiagramLoader = () => {
         }
 
         const loadDefaultDiagram = async () => {
-            if (diagramId) {
-                setInitialDiagram(undefined);
-                showLoader();
-                resetRedoStack();
-                resetUndoStack();
-                const diagram = await loadDiagram(diagramId);
-                if (!diagram) {
+            try {
+                if (diagramId) {
+                    setInitialDiagram(undefined);
+                    showLoader();
+                    resetRedoStack();
+                    resetUndoStack();
+                    const diagram = await loadDiagram(diagramId);
+                    if (!diagram) {
+                        openOpenDiagramDialog({ canClose: false });
+                        return;
+                    }
+
+                    setInitialDiagram(diagram);
+
+                    return;
+                } else if (!diagramId && config.defaultDiagramId) {
+                    const diagram = await loadDiagram(config.defaultDiagramId);
+                    if (diagram) {
+                        navigate(`/diagrams/${config.defaultDiagramId}`);
+
+                        return;
+                    }
+                }
+                const diagrams = await listDiagrams();
+
+                if (diagrams.length > 0) {
                     openOpenDiagramDialog({ canClose: false });
-                    hideLoader();
-                    return;
+                } else {
+                    openDatabaseCatalogDialog({ canClose: false });
                 }
-
-                setInitialDiagram(diagram);
+            } finally {
                 hideLoader();
-
-                return;
-            } else if (!diagramId && config.defaultDiagramId) {
-                const diagram = await loadDiagram(config.defaultDiagramId);
-                if (diagram) {
-                    navigate(`/diagrams/${config.defaultDiagramId}`);
-
-                    return;
-                }
-            }
-            const diagrams = await listDiagrams();
-
-            if (diagrams.length > 0) {
-                openOpenDiagramDialog({ canClose: false });
-            } else {
-                openDatabaseCatalogDialog({ canClose: false });
             }
         };
 
@@ -72,7 +74,9 @@ export const useDiagramLoader = () => {
         }
         currentDiagramLoadingRef.current = diagramId ?? '';
 
-        loadDefaultDiagram();
+        loadDefaultDiagram().catch(() => {
+            currentDiagramLoadingRef.current = undefined;
+        });
     }, [
         diagramId,
         openDatabaseCatalogDialog,

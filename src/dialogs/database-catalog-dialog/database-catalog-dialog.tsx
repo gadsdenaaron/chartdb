@@ -52,6 +52,7 @@ export const DatabaseCatalogDialog: React.FC<DatabaseCatalogDialogProps> = ({
             return;
         }
         setSelectedFile(undefined);
+        setLoadingFile(undefined);
         setLoading(true);
         fetchDatabaseCatalog()
             .then(setEntries)
@@ -64,12 +65,16 @@ export const DatabaseCatalogDialog: React.FC<DatabaseCatalogDialogProps> = ({
                 return;
             }
             setLoadingFile(entry.file);
-            await addDiagram({ diagram: entry.diagram });
-            await updateConfig({
-                config: { defaultDiagramId: entry.diagram.id },
-            });
-            navigate(`/diagrams/${entry.diagram.id}`);
-            closeDatabaseCatalogDialog();
+            try {
+                await addDiagram({ diagram: entry.diagram });
+                await updateConfig({
+                    config: { defaultDiagramId: entry.diagram.id },
+                });
+                navigate(`/diagrams/${entry.diagram.id}`);
+                closeDatabaseCatalogDialog();
+            } finally {
+                setLoadingFile(undefined);
+            }
         },
         [
             addDiagram,
