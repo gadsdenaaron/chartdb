@@ -1,0 +1,1 @@
+const r="/chartdb/assets/duckdb-browser-mvp.worker-C9hF7LGh.js",s="/chartdb/assets/duckdb-mvp-BP0pRkMH.wasm",e="/chartdb/assets/duckdb-browser-eh.worker-hQa-dcAV.js",a="/chartdb/assets/duckdb-eh-9ubY-jlA.wasm",o={mvp:{mainModule:s,mainWorker:r},eh:{mainModule:a,mainWorker:e}};export{o as DUCKDB_BUNDLES};
