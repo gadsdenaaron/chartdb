@@ -37,7 +37,11 @@ export const OpenDiagramDialog: React.FC<OpenDiagramDialogProps> = ({
     dialog,
     canClose = true,
 }) => {
-    const { closeOpenDiagramDialog, openCreateDiagramDialog } = useDialog();
+    const {
+        closeOpenDiagramDialog,
+        openCreateDiagramDialog,
+        openDatabaseCatalogDialog,
+    } = useDialog();
     const { t } = useTranslation();
     const { updateConfig } = useConfig();
     const navigate = useNavigate();
@@ -255,6 +259,16 @@ export const OpenDiagramDialog: React.FC<OpenDiagramDialogProps> = ({
                         <div />
                     )}
                     <div className="flex gap-2">
+                        <Button
+                            type="button"
+                            variant="secondary"
+                            onClick={() => {
+                                closeOpenDiagramDialog();
+                                openDatabaseCatalogDialog();
+                            }}
+                        >
+                            {t('open_diagram_dialog.browse_models')}
+                        </Button>
                         <Button
                             type="button"
                             variant="secondary"

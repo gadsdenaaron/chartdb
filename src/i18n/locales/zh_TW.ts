@@ -5,6 +5,7 @@ export const zh_TW: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: '新建',
             browse: '開啟',
+            browse_models: '模型',
             tables: '表格',
             refs: 'Refs',
             dependencies: '相依性',
@@ -16,6 +17,7 @@ export const zh_TW: LanguageTranslation = {
                 actions: '操作',
                 new: '新增...',
                 browse: '所有資料庫...',
+                browse_models: '瀏覽資料模型...',
                 save: '儲存',
                 import: '匯入資料庫',
                 export_sql: '匯出 SQL',
@@ -358,12 +360,27 @@ export const zh_TW: LanguageTranslation = {
             cancel: '取消',
             open: '開啟',
             new_database: '新建資料庫',
+            browse_models: '瀏覽資料模型',
 
             diagram_actions: {
                 open: '開啟',
                 duplicate: '複製',
                 delete: '刪除',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

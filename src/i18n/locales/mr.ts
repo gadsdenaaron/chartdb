@@ -5,6 +5,7 @@ export const mr: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'नवीन',
             browse: 'उघडा',
+            browse_models: 'मॉडेल्स',
             tables: 'टेबल',
             refs: 'Refs',
             dependencies: 'अवलंबने',
@@ -16,6 +17,7 @@ export const mr: LanguageTranslation = {
                 actions: 'क्रिया',
                 new: 'नवीन...',
                 browse: 'सर्व डेटाबेस...',
+                browse_models: 'डेटा मॉडेल्स ब्राउझ करा...',
                 save: 'जतन करा',
                 import: 'डेटाबेस इम्पोर्ट करा',
                 export_sql: 'SQL एक्स्पोर्ट करा',
@@ -372,12 +374,27 @@ export const mr: LanguageTranslation = {
             cancel: 'रद्द करा',
             open: 'उघडा',
             new_database: 'नवीन डेटाबेस',
+            browse_models: 'डेटा मॉडेल्स ब्राउझ करा',
 
             diagram_actions: {
                 open: 'उघडा',
                 duplicate: 'डुप्लिकेट',
                 delete: 'हटवा',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

@@ -5,6 +5,7 @@ export const uk: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Нова',
             browse: 'Відкрити',
+            browse_models: 'Моделі',
             tables: 'Таблиці',
             refs: 'Зв’язки',
             dependencies: 'Залежності',
@@ -16,6 +17,7 @@ export const uk: LanguageTranslation = {
                 actions: 'Дії',
                 new: 'Нова...',
                 browse: 'Усі бази даних...',
+                browse_models: 'Переглянути моделі даних...',
                 save: 'Зберегти',
                 import: 'Імпорт бази даних',
                 export_sql: 'Експорт SQL',
@@ -366,12 +368,27 @@ export const uk: LanguageTranslation = {
             cancel: 'Скасувати',
             open: 'Відкрити',
             new_database: 'Нова база даних',
+            browse_models: 'Переглянути моделі даних',
 
             diagram_actions: {
                 open: 'Відкрити',
                 duplicate: 'Дублювати',
                 delete: 'Видалити',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

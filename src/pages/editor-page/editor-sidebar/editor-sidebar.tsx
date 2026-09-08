@@ -17,6 +17,7 @@ import {
     Plus,
     FolderOpen,
     CodeXml,
+    LayoutTemplate,
 } from 'lucide-react';
 import { Table, Workflow } from 'lucide-react';
 import { useLayout } from '@/hooks/use-layout';
@@ -52,7 +53,11 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
     const { isMd: isDesktop } = useBreakpoint('md');
     const { effectiveTheme } = useTheme();
     const { databaseType } = useChartDB();
-    const { openCreateDiagramDialog, openOpenDiagramDialog } = useDialog();
+    const {
+        openCreateDiagramDialog,
+        openOpenDiagramDialog,
+        openDatabaseCatalogDialog,
+    } = useDialog();
 
     const diagramItems: SidebarItem[] = useMemo(
         () => [
@@ -72,8 +77,21 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                 },
                 active: false,
             },
+            {
+                title: t('editor_sidebar.browse_models'),
+                icon: LayoutTemplate,
+                onClick: () => {
+                    openDatabaseCatalogDialog();
+                },
+                active: false,
+            },
         ],
-        [t, openCreateDiagramDialog, openOpenDiagramDialog]
+        [
+            t,
+            openCreateDiagramDialog,
+            openOpenDiagramDialog,
+            openDatabaseCatalogDialog,
+        ]
     );
 
     const baseItems: SidebarItem[] = useMemo(

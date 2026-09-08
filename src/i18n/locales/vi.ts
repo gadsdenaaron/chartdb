@@ -5,6 +5,7 @@ export const vi: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Mới',
             browse: 'Mở',
+            browse_models: 'Mô hình',
             tables: 'Bảng',
             refs: 'Refs',
             dependencies: 'Phụ thuộc',
@@ -16,6 +17,7 @@ export const vi: LanguageTranslation = {
                 actions: 'Hành động',
                 new: 'Mới...',
                 browse: 'Tất cả cơ sở dữ liệu...',
+                browse_models: 'Duyệt mô hình dữ liệu...',
                 save: 'Lưu',
                 import: 'Nhập cơ sở dữ liệu',
                 export_sql: 'Xuất SQL',
@@ -365,12 +367,27 @@ export const vi: LanguageTranslation = {
             cancel: 'Hủy',
             open: 'Mở',
             new_database: 'Cơ sở dữ liệu mới',
+            browse_models: 'Duyệt mô hình dữ liệu',
 
             diagram_actions: {
                 open: 'Mở',
                 duplicate: 'Nhân bản',
                 delete: 'Xóa',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

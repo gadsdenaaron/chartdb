@@ -5,6 +5,7 @@ export const ru: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Новая',
             browse: 'Открыть',
+            browse_models: 'Модели',
             tables: 'Таблицы',
             refs: 'Ссылки',
             dependencies: 'Зависимости',
@@ -16,6 +17,7 @@ export const ru: LanguageTranslation = {
                 actions: 'Действия',
                 new: 'Новая...',
                 browse: 'Все базы данных...',
+                browse_models: 'Обзор моделей данных...',
                 save: 'Сохранить',
                 import: 'Импортировать базу данных',
                 export_sql: 'Экспорт SQL',
@@ -365,12 +367,27 @@ export const ru: LanguageTranslation = {
             cancel: 'Отмена',
             open: 'Открыть',
             new_database: 'Новая база данных',
+            browse_models: 'Обзор моделей данных',
 
             diagram_actions: {
                 open: 'Открыть',
                 duplicate: 'Дублировать',
                 delete: 'Удалить',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

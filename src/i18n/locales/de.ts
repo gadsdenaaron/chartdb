@@ -5,6 +5,7 @@ export const de: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Neu',
             browse: 'Öffnen',
+            browse_models: 'Modelle',
             tables: 'Tabellen',
             refs: 'Refs',
             dependencies: 'Abhängigkeiten',
@@ -16,6 +17,7 @@ export const de: LanguageTranslation = {
                 actions: 'Aktionen',
                 new: 'Neu...',
                 browse: 'Alle Datenbanken...',
+                browse_models: 'Datenmodelle durchsuchen...',
                 save: 'Speichern',
                 import: 'Datenbank importieren',
                 export_sql: 'SQL exportieren',
@@ -369,12 +371,27 @@ export const de: LanguageTranslation = {
             cancel: 'Abbrechen',
             open: 'Öffnen',
             new_database: 'Neue Datenbank',
+            browse_models: 'Datenmodelle durchsuchen',
 
             diagram_actions: {
                 open: 'Öffnen',
                 duplicate: 'Duplizieren',
                 delete: 'Löschen',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

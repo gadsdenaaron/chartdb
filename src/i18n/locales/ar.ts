@@ -5,6 +5,7 @@ export const ar: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'جديد',
             browse: 'فتح',
+            browse_models: 'نماذج',
             tables: 'الجداول',
             refs: 'المراجع',
             dependencies: 'التبعيات',
@@ -16,6 +17,7 @@ export const ar: LanguageTranslation = {
                 actions: 'الإجراءات',
                 new: 'جديد...',
                 browse: 'جميع قواعد البيانات...',
+                browse_models: 'تصفح نماذج البيانات...',
                 save: 'حفظ',
                 import: 'استيراد قاعدة بيانات',
                 export_sql: 'SQL تصدير',
@@ -360,12 +362,27 @@ export const ar: LanguageTranslation = {
             cancel: 'إلغاء',
             open: 'فتح',
             new_database: 'قاعدة بيانات جديدة',
+            browse_models: 'تصفح نماذج البيانات',
 
             diagram_actions: {
                 open: 'فتح',
                 duplicate: 'تكرار',
                 delete: 'حذف',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

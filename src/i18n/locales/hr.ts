@@ -5,6 +5,7 @@ export const hr: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Novi',
             browse: 'Otvori',
+            browse_models: 'Modeli',
             tables: 'Tablice',
             refs: 'Refs',
             dependencies: 'Ovisnosti',
@@ -16,6 +17,7 @@ export const hr: LanguageTranslation = {
                 actions: 'Akcije',
                 new: 'Novi...',
                 browse: 'Sve baze podataka...',
+                browse_models: 'Pregledaj modele podataka...',
                 save: 'Spremi',
                 import: 'Uvezi',
                 export_sql: 'Izvezi SQL',
@@ -361,12 +363,27 @@ export const hr: LanguageTranslation = {
             cancel: 'Odustani',
             open: 'Otvori',
             new_database: 'Nova baza podataka',
+            browse_models: 'Pregledaj modele podataka',
 
             diagram_actions: {
                 open: 'Otvori',
                 duplicate: 'Dupliciraj',
                 delete: 'Obriši',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

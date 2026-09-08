@@ -5,6 +5,7 @@ export const tr: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Yeni',
             browse: 'Aç',
+            browse_models: 'Modeller',
             tables: 'Tablolar',
             refs: 'Refs',
             dependencies: 'Bağımlılıklar',
@@ -16,6 +17,7 @@ export const tr: LanguageTranslation = {
                 actions: 'Eylemler',
                 new: 'Yeni...',
                 browse: 'Tüm veritabanları...',
+                browse_models: 'Veri Modellerine Göz At...',
                 save: 'Kaydet',
                 import: 'Veritabanı İçe Aktar',
                 export_sql: 'SQL Olarak Dışa Aktar',
@@ -361,12 +363,27 @@ export const tr: LanguageTranslation = {
             cancel: 'İptal',
             open: 'Aç',
             new_database: 'Yeni Veritabanı',
+            browse_models: 'Veri Modellerine Göz At',
 
             diagram_actions: {
                 open: 'Aç',
                 duplicate: 'Kopyala',
                 delete: 'Sil',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

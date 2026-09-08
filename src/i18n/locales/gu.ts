@@ -5,6 +5,7 @@ export const gu: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'નવું',
             browse: 'ખોલો',
+            browse_models: 'મોડેલો',
             tables: 'ટેબલો',
             refs: 'રેફ્સ',
             dependencies: 'નિર્ભરતાઓ',
@@ -16,6 +17,7 @@ export const gu: LanguageTranslation = {
                 actions: 'ક્રિયાઓ',
                 new: 'નવું...',
                 browse: 'બધા ડેટાબેસ...',
+                browse_models: 'ડેટા મોડેલ્સ બ્રાઉઝ કરો...',
                 save: 'સાચવો',
                 import: 'ડેટાબેસ આયાત કરો',
                 export_sql: 'SQL નિકાસ કરો',
@@ -365,12 +367,27 @@ export const gu: LanguageTranslation = {
             cancel: 'રદ કરો',
             open: 'ખોલો',
             new_database: 'નવું ડેટાબેસ',
+            browse_models: 'ડેટા મોડેલ્સ બ્રાઉઝ કરો',
 
             diagram_actions: {
                 open: 'ખોલો',
                 duplicate: 'ડુપ્લિકેટ',
                 delete: 'કાઢી નાખો',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {

@@ -5,6 +5,7 @@ export const id_ID: LanguageTranslation = {
         editor_sidebar: {
             new_diagram: 'Baru',
             browse: 'Buka',
+            browse_models: 'Model',
             tables: 'Tabel',
             refs: 'Refs',
             dependencies: 'Ketergantungan',
@@ -16,6 +17,7 @@ export const id_ID: LanguageTranslation = {
                 actions: 'Aksi',
                 new: 'Baru...',
                 browse: 'Semua database...',
+                browse_models: 'Jelajahi Model Data...',
                 save: 'Simpan',
                 import: 'Impor Database',
                 export_sql: 'Ekspor SQL',
@@ -365,12 +367,27 @@ export const id_ID: LanguageTranslation = {
             cancel: 'Batal',
             open: 'Buka',
             new_database: 'Database Baru',
+            browse_models: 'Jelajahi Model Data',
 
             diagram_actions: {
                 open: 'Buka',
                 duplicate: 'Duplikat',
                 delete: 'Hapus',
             },
+        },
+
+        database_catalog_dialog: {
+            title: 'Get Started',
+            description:
+                'Choose a database diagram from the catalog to load, or start from scratch.',
+            table_columns: {
+                name: 'Name',
+                tables_count: 'Tables',
+            },
+            empty: 'No catalog diagrams found.',
+            cancel: 'Cancel',
+            open: 'Load',
+            new_database: 'New Database',
         },
 
         export_sql_dialog: {
