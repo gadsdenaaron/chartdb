@@ -11,6 +11,7 @@ export const hi: LanguageTranslation = {
             dependencies: 'निर्भरताएं',
             custom_types: 'कस्टम टाइप',
             visuals: 'Visuals',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -304,6 +305,20 @@ export const hi: LanguageTranslation = {
                         clear_field_highlight: 'हाइलाइट हटाएं',
                     },
                     delete_custom_type: 'प्रकार हटाएं',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },

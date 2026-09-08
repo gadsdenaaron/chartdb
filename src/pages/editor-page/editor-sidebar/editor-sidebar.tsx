@@ -18,6 +18,7 @@ import {
     FolderOpen,
     CodeXml,
     LayoutTemplate,
+    TerminalSquare,
 } from 'lucide-react';
 import { Table, Workflow } from 'lucide-react';
 import { useLayout } from '@/hooks/use-layout';
@@ -145,6 +146,15 @@ export const EditorSidebar: React.FC<EditorSidebarProps> = () => {
                     selectVisualsTab('areas');
                 },
                 active: selectedSidebarSection === 'visuals',
+            },
+            {
+                title: t('editor_sidebar.sql_console'),
+                icon: TerminalSquare,
+                onClick: () => {
+                    showSidePanel();
+                    selectSidebarSection('sqlConsole');
+                },
+                active: selectedSidebarSection === 'sqlConsole',
             },
         ],
         [

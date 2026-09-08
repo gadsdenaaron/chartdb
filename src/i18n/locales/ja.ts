@@ -11,6 +11,7 @@ export const ja: LanguageTranslation = {
             dependencies: '依存関係',
             custom_types: 'カスタムタイプ',
             visuals: 'ビジュアル',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -305,6 +306,20 @@ export const ja: LanguageTranslation = {
                         clear_field_highlight: 'ハイライトを解除',
                     },
                     delete_custom_type: '型を削除',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },

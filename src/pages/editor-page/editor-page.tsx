@@ -17,6 +17,8 @@ import { ReactFlowProvider } from '@xyflow/react';
 import { ExportImageProvider } from '@/context/export-image-context/export-image-provider';
 import { DialogProvider } from '@/context/dialog-context/dialog-provider';
 import { KeyboardShortcutsProvider } from '@/context/keyboard-shortcuts-context/keyboard-shortcuts-provider';
+import { DataSourceProvider } from '@/context/data-source-context/data-source-provider';
+import { DuckDBProvider } from '@/context/duckdb-context/duckdb-provider';
 import { Spinner } from '@/components/spinner/spinner';
 import { Helmet } from 'react-helmet-async';
 import { AlertProvider } from '@/context/alert-context/alert-provider';
@@ -127,11 +129,15 @@ export const EditorPage: React.FC = () => (
                                                     <CanvasProvider>
                                                         <ExportImageProvider>
                                                             <AlertProvider>
-                                                                <DialogProvider>
-                                                                    <KeyboardShortcutsProvider>
-                                                                        <EditorPageComponent />
-                                                                    </KeyboardShortcutsProvider>
-                                                                </DialogProvider>
+                                                                <DataSourceProvider>
+                                                                    <DuckDBProvider>
+                                                                        <DialogProvider>
+                                                                            <KeyboardShortcutsProvider>
+                                                                                <EditorPageComponent />
+                                                                            </KeyboardShortcutsProvider>
+                                                                        </DialogProvider>
+                                                                    </DuckDBProvider>
+                                                                </DataSourceProvider>
                                                             </AlertProvider>
                                                         </ExportImageProvider>
                                                     </CanvasProvider>

@@ -11,6 +11,7 @@ export const uk: LanguageTranslation = {
             dependencies: 'Залежності',
             custom_types: 'Користувацькі типи',
             visuals: 'Візуальні елементи',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -302,6 +303,20 @@ export const uk: LanguageTranslation = {
                         clear_field_highlight: 'Зняти виділення',
                     },
                     delete_custom_type: 'Видалити тип',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },

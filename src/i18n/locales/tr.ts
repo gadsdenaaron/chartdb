@@ -11,6 +11,7 @@ export const tr: LanguageTranslation = {
             dependencies: 'Bağımlılıklar',
             custom_types: 'Özel Tipler',
             visuals: 'Görseller',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -301,6 +302,20 @@ export const tr: LanguageTranslation = {
                         clear_field_highlight: 'Vurguyu Kaldır',
                     },
                     delete_custom_type: 'Tipi Sil',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },

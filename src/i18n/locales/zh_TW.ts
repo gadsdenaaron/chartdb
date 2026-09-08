@@ -11,6 +11,7 @@ export const zh_TW: LanguageTranslation = {
             dependencies: '相依性',
             custom_types: '自定義類型',
             visuals: '視覺效果',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -296,6 +297,20 @@ export const zh_TW: LanguageTranslation = {
                         clear_field_highlight: '清除突出顯示',
                     },
                     delete_custom_type: '刪除類型',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },

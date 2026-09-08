@@ -31,6 +31,12 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
+    optimizeDeps: {
+        exclude: ['@duckdb/duckdb-wasm'],
+    },
+    worker: {
+        format: 'es',
+    },
     build: {
         rollupOptions: {
             external: (id) => /__test__/.test(id),

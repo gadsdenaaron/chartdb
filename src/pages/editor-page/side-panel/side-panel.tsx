@@ -18,6 +18,7 @@ import { supportsCustomTypes } from '@/lib/domain/database-capabilities';
 import { DBMLSection } from './dbml-section/dbml-section';
 import { RefsSection } from './refs-section/refs-section';
 import { VisualsSection } from './visuals-section/visuals-section';
+import { SQLConsoleSection } from './sql-console-section/sql-console-section';
 
 export interface SidePanelProps {}
 
@@ -57,6 +58,9 @@ export const SidePanel: React.FC<SidePanelProps> = () => {
                                 <SelectItem value="visuals">
                                     {t('side_panel.visuals_section.visuals')}
                                 </SelectItem>
+                                <SelectItem value="sqlConsole">
+                                    {t('side_panel.sql_console_section.title')}
+                                </SelectItem>
                                 {supportsCustomTypes(databaseType) ? (
                                     <SelectItem value="customTypes">
                                         {t(
@@ -77,6 +81,8 @@ export const SidePanel: React.FC<SidePanelProps> = () => {
                 <RefsSection />
             ) : selectedSidebarSection === 'visuals' ? (
                 <VisualsSection />
+            ) : selectedSidebarSection === 'sqlConsole' ? (
+                <SQLConsoleSection />
             ) : (
                 <CustomTypesSection />
             )}

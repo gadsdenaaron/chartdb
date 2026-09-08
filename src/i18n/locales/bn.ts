@@ -11,6 +11,7 @@ export const bn: LanguageTranslation = {
             dependencies: 'নির্ভরতা',
             custom_types: 'কাস্টম টাইপ',
             visuals: 'ভিজ্যুয়াল',
+            sql_console: 'SQL Console',
         },
         menu: {
             actions: {
@@ -304,6 +305,20 @@ export const bn: LanguageTranslation = {
                         clear_field_highlight: 'হাইলাইট সরান',
                     },
                     delete_custom_type: 'টাইপ মুছুন',
+                },
+            },
+            sql_console_section: {
+                title: 'SQL Console',
+                run: 'Run',
+                run_shortcut_hint: '⌘/Ctrl + Enter to run',
+                upload_files: 'Upload Files',
+                results: {
+                    no_results:
+                        'No results yet — run a query to see data here.',
+                    row_count: '{{count}} row',
+                    row_count_plural: '{{count}} rows',
+                    truncated_notice:
+                        'Showing first {{shown}} of {{total}} rows',
                 },
             },
         },
